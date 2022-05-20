@@ -1,5 +1,6 @@
-import 'package:catalog_widget/snack_bar/snack_bar_page.dart';
 import 'package:flutter/material.dart';
+
+import 'date_picker/date_picker_page.dart';
 
 void main() {
   runApp(const AppWidget());
@@ -10,8 +11,11 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SnackBarPage(),
+    return MaterialApp(
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      home: DatePickePage(),
       // Scaffold(
       //   backgroundColor: Colors.blueGrey.shade200,
       //   appBar: AppBar(
